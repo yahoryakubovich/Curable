@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %} Контакты - свяжитесь с нами, если у вас есть вопросы {% endblock %}
+{% block content %}
+    <h2>Контакты</h2>
+    <p>Свяжитесь с нами, используя следующие контактные данные:</p>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Общие вопросы и служба заботы о клиентах:</h4>
+            <p>чат на сайте<br> vse@yasno.live</p>
+            <hr class="dropdown-divider">
+
+            <h4>Сотрудничество с психологами:</h4>
+            <p><a href="work.yasno.live/psychologist">work.yasno.live/psychologist</a><br> psy@yasno.live</p>
+            <hr class="dropdown-divider">
+
+            <h4>Корпоративные решения:</h4>
+            <p><a href="business.yasno.live">business.yasno.live</a><br> business@yasno.live</p>
+            <hr class="dropdown-divider">
+
+            <h4>Сотрудничество со СМИ и по спецпроектам:</h4>
+            <p>pr@yasno.live</p>
+            <hr class="dropdown-divider">
+
+            <h4>Размещение рекламы и работа с блогерами:</h4>
+            <p>marketing@yasno.live</p>
+            <hr class="dropdown-divider">
+
+            <h4>Работа в «Ясно»:</h4>
+            <p><a href="work.yasno.live">work.yasno.live</a><br> jobs@yasno.live</p>
+        </div>
+        <div class="col-md-12">
+            <h4>Форма обратной связи:</h4>
+            <form>
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
